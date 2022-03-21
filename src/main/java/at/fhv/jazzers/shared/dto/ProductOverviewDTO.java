@@ -41,7 +41,6 @@ public class ProductOverviewDTO implements Serializable {
         return stock;
     }
 
-
     public double price() {
         return price;
     }
