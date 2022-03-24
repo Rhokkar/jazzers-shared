@@ -6,7 +6,7 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.List;
 
-public interface ProductService extends Remote {
+public interface RMI_ProductService extends Remote {
     List<ProductOverviewDTO> searchMP3sByTitleOrInterpret(String searchString) throws RemoteException;
     List<ProductOverviewDTO> searchPhonogramsByTitleOrInterpret(String searchString) throws RemoteException;
 }
