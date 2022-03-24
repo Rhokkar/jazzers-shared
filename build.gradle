@@ -2,9 +2,7 @@ plugins {
     id 'java'
 }
 
-apply plugin: 'maven'
 group 'at.fhv.jazzers.shared'
-group = 'com.github.Rhokkar'
 version '1.0-SNAPSHOT'
 
 repositories {
