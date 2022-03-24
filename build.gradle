@@ -1,3 +1,7 @@
+apply plugin: 'maven'
+
+group = 'com.github.Rhokkar'
+
 plugins {
     id 'java'
 }
