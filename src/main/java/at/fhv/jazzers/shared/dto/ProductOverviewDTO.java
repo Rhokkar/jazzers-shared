@@ -21,27 +21,27 @@ public class ProductOverviewDTO implements Serializable {
         this.price = price;
     }
 
-    public UUID productId() {
+    public UUID getProductId() {
         return productId;
     }
 
-    public String interpret() {
+    public String getInterpret() {
         return interpret;
     }
 
-    public String title() {
+    public String getTitle() {
         return title;
     }
 
-    public String medium() {
+    public String getMedium() {
         return medium;
     }
 
-    public int stock() {
+    public int getStock() {
         return stock;
     }
 
-    public double price() {
+    public double getPrice() {
         return price;
     }
 

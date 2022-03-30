@@ -13,11 +13,11 @@ public class LineDTO implements Serializable {
         this.amount = amount;
     }
 
-    public UUID productId() {
+    public UUID getProductId() {
         return productId;
     }
 
-    public int amount() {
+    public int getAmount() {
         return amount;
     }
 
