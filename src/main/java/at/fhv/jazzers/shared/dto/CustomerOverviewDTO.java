@@ -1,9 +1,10 @@
 package at.fhv.jazzers.shared.dto;
 
+import java.io.Serializable;
 import java.util.Objects;
 import java.util.UUID;
 
-public class CustomerOverviewDTO {
+public class CustomerOverviewDTO implements Serializable {
     private final UUID customerId;
     private final String firstName;
     private final String lastName;
