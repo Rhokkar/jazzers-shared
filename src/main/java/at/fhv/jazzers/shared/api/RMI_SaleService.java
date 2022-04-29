@@ -1,6 +1,7 @@
 package at.fhv.jazzers.shared.api;
 
 import at.fhv.jazzers.shared.dto.LineDTO;
+import at.fhv.jazzers.shared.dto.SaleHistoryDTO;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
@@ -12,7 +13,7 @@ public interface RMI_SaleService extends Remote {
 
     void refund(UUID customerId, List<LineDTO> linesDTO) throws RemoteException;
 
-    void saleHistoryFull() throws RemoteException;
+    List<SaleHistoryDTO> saleHistoryFull() throws RemoteException;
 
-    void saleHistoryForCustomer(UUID customerId) throws RemoteException;
+    List<SaleHistoryDTO> saleHistoryForCustomer(UUID customerId) throws RemoteException;
 }
