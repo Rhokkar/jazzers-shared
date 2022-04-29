@@ -9,5 +9,10 @@ import java.util.UUID;
 
 public interface RMI_SaleService extends Remote {
     void purchase(UUID customerId, List<LineDTO> linesDTO) throws RemoteException;
+
     void refund(UUID customerId, List<LineDTO> linesDTO) throws RemoteException;
+
+    void saleHistoryFull() throws RemoteException;
+
+    void saleHistoryForCustomer(UUID customerId) throws RemoteException;
 }
