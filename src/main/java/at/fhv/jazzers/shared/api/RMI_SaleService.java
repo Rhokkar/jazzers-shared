@@ -15,5 +15,5 @@ public interface RMI_SaleService extends Remote {
 
     List<SaleHistoryEntryOverviewDTO> saleHistoryFull() throws RemoteException;
 
-    List<SaleHistoryEntryOverviewDTO> saleHistoryForCustomer(UUID customerId) throws RemoteException;
+    List<SaleHistoryEntryOverviewDTO> saleHistoryBy(String customerNameOrSaleId) throws RemoteException;
 }
