@@ -50,7 +50,7 @@ public class SaleHistoryEntryDetailDTO implements Serializable {
     }
 
     public List<LineDTO> getLinesDTO() {
-        return List.copyOf(linesDTO);
+        return linesDTO;
     }
 
     @Override
