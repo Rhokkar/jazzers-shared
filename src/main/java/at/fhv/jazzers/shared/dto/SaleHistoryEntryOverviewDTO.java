@@ -5,7 +5,6 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class SaleHistoryEntryOverviewDTO implements Serializable {
-
     private final UUID saleId;
     private final String firstName;
     private final String lastName;
