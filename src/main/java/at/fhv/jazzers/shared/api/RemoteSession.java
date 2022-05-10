@@ -4,10 +4,11 @@ import javax.ejb.Remote;
 
 @Remote
 public interface RemoteSession {
+    boolean authenticate(String username, String password);
     String username();
     RMI_CustomerService rmi_customerService();
-    RemoteMessageConsumerService remoteMessageConsumerService();
-    RemoteMessagePublisherService remoteMessagePublisherService();
-    RemoteProductService remoteProductService();
-    RemoteSaleService remoteSaleService();
+    RemoteMessageConsumerService messageConsumerService();
+    RemoteMessagePublisherService messagePublisherService();
+    RemoteProductService productService();
+    RemoteSaleService saleService();
 }

@@ -11,12 +11,8 @@ import java.util.UUID;
 @Remote
 public interface RemoteSaleService {
     void purchase(UUID customerId, List<LineDTO> linesDTO);
-
     void refund(UUID saleId, List<LineDTO> linesDTO);
-
     List<SaleHistoryEntryOverviewDTO> saleHistoryFull();
-
     List<SaleHistoryEntryOverviewDTO> saleHistoryBy(String customerNameOrSaleId);
-
     SaleHistoryEntryDetailDTO saleDetail(UUID saleId);
 }
