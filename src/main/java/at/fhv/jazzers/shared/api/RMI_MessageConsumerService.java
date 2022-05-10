@@ -2,10 +2,10 @@ package at.fhv.jazzers.shared.api;
 
 import at.fhv.jazzers.shared.dto.MessageDTO;
 
-import java.rmi.Remote;
-import java.rmi.RemoteException;
+import javax.ejb.Remote;
 import java.util.List;
 
-public interface RMI_MessageConsumerService extends Remote {
-    List<MessageDTO> getMessagesFromSubscribedTopics(String userName) throws RemoteException;
+@Remote
+public interface RMI_MessageConsumerService {
+    List<MessageDTO> getMessagesFromSubscribedTopics(String userName);
 }

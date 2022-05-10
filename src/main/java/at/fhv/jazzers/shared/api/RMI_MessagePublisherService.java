@@ -1,8 +1,8 @@
 package at.fhv.jazzers.shared.api;
 
-import java.rmi.Remote;
-import java.rmi.RemoteException;
+import javax.ejb.Remote;
 
-public interface RMI_MessagePublisherService extends Remote {
-    void publish(String topic, String title, String message) throws RemoteException;
+@Remote
+public interface RMI_MessagePublisherService {
+    void publish(String topic, String title, String message);
 }

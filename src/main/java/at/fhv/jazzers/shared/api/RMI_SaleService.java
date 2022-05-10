@@ -4,19 +4,19 @@ import at.fhv.jazzers.shared.dto.LineDTO;
 import at.fhv.jazzers.shared.dto.SaleHistoryEntryDetailDTO;
 import at.fhv.jazzers.shared.dto.SaleHistoryEntryOverviewDTO;
 
-import java.rmi.Remote;
-import java.rmi.RemoteException;
+import javax.ejb.Remote;
 import java.util.List;
 import java.util.UUID;
 
-public interface RMI_SaleService extends Remote {
-    void purchase(UUID customerId, List<LineDTO> linesDTO) throws RemoteException;
+@Remote
+public interface RMI_SaleService {
+    void purchase(UUID customerId, List<LineDTO> linesDTO);
 
-    void refund(UUID saleId, List<LineDTO> linesDTO) throws RemoteException;
+    void refund(UUID saleId, List<LineDTO> linesDTO);
 
-    List<SaleHistoryEntryOverviewDTO> saleHistoryFull() throws RemoteException;
+    List<SaleHistoryEntryOverviewDTO> saleHistoryFull();
 
-    List<SaleHistoryEntryOverviewDTO> saleHistoryBy(String customerNameOrSaleId) throws RemoteException;
+    List<SaleHistoryEntryOverviewDTO> saleHistoryBy(String customerNameOrSaleId);
 
-    SaleHistoryEntryDetailDTO saleDetail(UUID saleId) throws RemoteException;
+    SaleHistoryEntryDetailDTO saleDetail(UUID saleId);
 }
