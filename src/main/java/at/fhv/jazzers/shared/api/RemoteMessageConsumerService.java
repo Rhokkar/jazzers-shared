@@ -6,6 +6,6 @@ import javax.ejb.Remote;
 import java.util.List;
 
 @Remote
-public interface RMI_MessageConsumerService {
+public interface RemoteMessageConsumerService {
     List<MessageDTO> getMessagesFromSubscribedTopics(String userName);
 }

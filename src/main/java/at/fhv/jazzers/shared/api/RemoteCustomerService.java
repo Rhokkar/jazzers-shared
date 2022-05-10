@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Remote
-public interface RMI_CustomerService {
+public interface RemoteCustomerService {
     CustomerDetailDTO searchById(UUID customerId);
     List<CustomerOverviewDTO> searchByName(String name);
 }

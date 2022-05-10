@@ -6,7 +6,7 @@ import javax.ejb.Remote;
 import java.util.List;
 
 @Remote
-public interface RMI_ProductService {
+public interface RemoteProductService {
     List<ProductOverviewDTO> searchAnalog(String titleOrInterpret);
     List<ProductOverviewDTO> searchDigital(String titleOrInterpret);
 }

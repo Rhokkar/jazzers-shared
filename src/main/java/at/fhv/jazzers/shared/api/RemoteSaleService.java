@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Remote
-public interface RMI_SaleService {
+public interface RemoteSaleService {
     void purchase(UUID customerId, List<LineDTO> linesDTO);
 
     void refund(UUID saleId, List<LineDTO> linesDTO);
