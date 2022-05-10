@@ -5,7 +5,7 @@ import javax.ejb.Remote;
 @Remote
 public interface RemoteSession {
     String username();
-    RemoteCustomerService rmi_customerService();
+    RMI_CustomerService rmi_customerService();
     RemoteMessageConsumerService rmi_messageConsumerService();
     RemoteMessagePublisherService rmi_messagePublisherService();
     RemoteProductService rmi_productService();
