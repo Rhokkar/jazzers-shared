@@ -10,6 +10,11 @@ repositories {
 }
 
 dependencies {
+    // Enterprise Java Beans
+    implementation 'javax.ejb:javax.ejb-api:3.2.2'
+    // Contexts and Dependency Injection
+    implementation 'javax.enterprise:cdi-api:2.0.SP1'
+
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
 }
