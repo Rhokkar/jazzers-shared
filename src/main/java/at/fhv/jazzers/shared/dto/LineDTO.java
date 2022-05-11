@@ -10,7 +10,7 @@ public class LineDTO implements Serializable {
     private final String productTitle;
     private final double productPrice;
     private final int amountPurchased;
-    private final int amountRefunded;
+    private int amountRefunded;
 
     public LineDTO(UUID lineId, UUID productId, String productTitle, double productPrice, int amountPurchased, int amountRefunded) {
         this.lineId = lineId;
@@ -44,6 +44,8 @@ public class LineDTO implements Serializable {
     public int getAmountRefunded() {
         return amountRefunded;
     }
+
+    public void setAmountRefunded(Integer refunded) { this.amountRefunded = refunded; }
 
     @Override
     public boolean equals(Object o) {
