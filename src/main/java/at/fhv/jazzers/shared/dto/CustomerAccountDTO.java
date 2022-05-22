@@ -5,10 +5,14 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class CustomerAccountDTO implements Serializable {
-    private final UUID customerId;
-    private final String firstName;
-    private final String lastName;
-    private final String iban;
+    private UUID customerId;
+    private String firstName;
+    private String lastName;
+    private String iban;
+
+    public CustomerAccountDTO() {
+
+    }
 
     public CustomerAccountDTO(UUID customerId, String firstName, String lastName, String iban) {
         this.customerId = customerId;
