@@ -6,17 +6,21 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class CustomerDetailDTO implements Serializable {
-    private final UUID customerId;
-    private final String firstName;
-    private final String lastName;
-    private final String gender;
-    private final LocalDate birthDate;
-    private final String email;
-    private final String phoneNumber;
-    private final String mobileNumber;
-    private final AddressDTO addressDTO;
-    private final BankAccountDTO bankAccountDTO;
-    private final CreditCardDTO creditCardDTO;
+    private UUID customerId;
+    private String firstName;
+    private String lastName;
+    private String gender;
+    private LocalDate birthDate;
+    private String email;
+    private String phoneNumber;
+    private String mobileNumber;
+    private AddressDTO addressDTO;
+    private BankAccountDTO bankAccountDTO;
+    private CreditCardDTO creditCardDTO;
+
+    public CustomerDetailDTO() {
+
+    }
 
     public CustomerDetailDTO(UUID customerId, String firstName, String lastName, String gender, LocalDate birthDate, String email, String phoneNumber, String mobileNumber, AddressDTO addressDTO, BankAccountDTO bankAccountDTO, CreditCardDTO creditCardDTO) {
         this.customerId = customerId;

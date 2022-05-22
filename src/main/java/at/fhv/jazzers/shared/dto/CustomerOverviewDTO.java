@@ -5,9 +5,13 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class CustomerOverviewDTO implements Serializable {
-    private final UUID customerId;
-    private final String firstName;
-    private final String lastName;
+    private UUID customerId;
+    private String firstName;
+    private String lastName;
+
+    public CustomerOverviewDTO() {
+
+    }
 
     public CustomerOverviewDTO(UUID customerId, String firstName, String lastName) {
         this.customerId = customerId;

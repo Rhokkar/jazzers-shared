@@ -4,11 +4,15 @@ import java.io.Serializable;
 import java.util.Objects;
 
 public class AddressDTO implements Serializable {
-    private final String country;
-    private final String locality;
-    private final String postalCode;
-    private final String street;
-    private final String houseNumber;
+    private String country;
+    private String locality;
+    private String postalCode;
+    private String street;
+    private String houseNumber;
+
+    public AddressDTO() {
+
+    }
 
     public AddressDTO(String country, String locality, String postalCode, String street, String houseNumber) {
         this.country = country;

@@ -4,8 +4,12 @@ import java.io.Serializable;
 import java.util.Objects;
 
 public class CreditCardDTO implements Serializable {
-    private final String creditCardNumber;
-    private final String creditCardType;
+    private String creditCardNumber;
+    private String creditCardType;
+
+    public CreditCardDTO() {
+
+    }
 
     public CreditCardDTO(String creditCardNumber, String creditCardType) {
         this.creditCardNumber = creditCardNumber;

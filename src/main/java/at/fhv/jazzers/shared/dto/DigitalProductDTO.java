@@ -5,12 +5,16 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class DigitalProductDTO implements Serializable {
-    private final UUID productId;
-    private final String title;
-    private final String interpret;
-    private final String medium;
-    private final String genre;
-    private final double price;
+    private UUID productId;
+    private String title;
+    private String interpret;
+    private String medium;
+    private String genre;
+    private double price;
+
+    public DigitalProductDTO() {
+
+    }
 
     public DigitalProductDTO(UUID productId, String title, String interpret, String medium, String genre, double price) {
         this.productId = productId;

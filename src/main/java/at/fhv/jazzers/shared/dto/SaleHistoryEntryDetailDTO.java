@@ -7,13 +7,17 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class SaleHistoryEntryDetailDTO implements Serializable {
-    private final UUID customerId;
-    private final String firstName;
-    private final String lastName;
-    private final AddressDTO addressDTO;
-    private final UUID saleId;
-    private final LocalDate saleDate;
-    private final List<LineDTO> linesDTO;
+    private UUID customerId;
+    private String firstName;
+    private String lastName;
+    private AddressDTO addressDTO;
+    private UUID saleId;
+    private LocalDate saleDate;
+    private List<LineDTO> linesDTO;
+
+    public SaleHistoryEntryDetailDTO() {
+
+    }
 
     public SaleHistoryEntryDetailDTO(UUID customerId, String firstName, String lastName, AddressDTO addressDTO, UUID saleId, LocalDate saleDate, List<LineDTO> linesDTO) {
         this.customerId = customerId;

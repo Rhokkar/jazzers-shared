@@ -6,12 +6,16 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class SaleHistoryEntryOverviewDTO implements Serializable {
-    private final UUID saleId;
-    private final String firstName;
-    private final String lastName;
-    private final double totalPrice;
-    private final int quantity;
-    private final LocalDate date;
+    private UUID saleId;
+    private String firstName;
+    private String lastName;
+    private double totalPrice;
+    private int quantity;
+    private LocalDate date;
+
+    public SaleHistoryEntryOverviewDTO() {
+
+    }
 
     public SaleHistoryEntryOverviewDTO(UUID saleId, String firstName, String lastName, double totalPrice, int quantity, LocalDate date) {
         this.saleId = saleId;

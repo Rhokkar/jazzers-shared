@@ -4,9 +4,13 @@ import java.io.Serializable;
 import java.util.Objects;
 
 public class MessageDTO implements Serializable {
-    private final String topic;
-    private final String title;
-    private final String message;
+    private String topic;
+    private String title;
+    private String message;
+
+    public MessageDTO() {
+
+    }
 
     public MessageDTO(String topic, String title, String message) {
         this.topic = topic;

@@ -5,12 +5,16 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class LineDTO implements Serializable {
-    private final UUID lineId;
-    private final UUID productId;
-    private final String productTitle;
-    private final double productPrice;
-    private final int amountPurchased;
+    private UUID lineId;
+    private UUID productId;
+    private String productTitle;
+    private double productPrice;
+    private int amountPurchased;
     private int amountRefunded;
+
+    public LineDTO() {
+
+    }
 
     public LineDTO(UUID lineId, UUID productId, String productTitle, double productPrice, int amountPurchased, int amountRefunded) {
         this.lineId = lineId;

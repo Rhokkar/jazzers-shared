@@ -4,10 +4,14 @@ import java.io.Serializable;
 import java.util.Objects;
 
 public class BankAccountDTO implements Serializable {
-    private final String city;
-    private final String bankCode;
-    private final String bic;
-    private final String iban;
+    private String city;
+    private String bankCode;
+    private String bic;
+    private String iban;
+
+    public BankAccountDTO() {
+
+    }
 
     public BankAccountDTO(String city, String bankCode, String bic, String iban) {
         this.city = city;
